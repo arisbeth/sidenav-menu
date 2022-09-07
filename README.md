@@ -8,7 +8,7 @@ If you’re working on craft CMS, this can used for develop a vertical menu with
 ### Usage:
 
 
-The HTML structure is composed by 3 main elements: a <header> element, containing the website logo, the search form, the navigation trigger (.menu-mobile - mobile version only) and the top navigation, and a <main> element containing the page main content (div.content-wrapper) and the sidebar navigation (nav.cd-side-nav).
+The HTML structure is composed by 3 main elements: a ``` <header> ```element, containing the website logo, the search form, the navigation trigger ```(.menu-mobile - mobile version only)``` and the top navigation, and a ``` <main> ```element containing the page main content ```(div.content-wrapper)``` and the sidebar navigation ```(nav.cd-side-nav)```.
 
 Import function:
 
@@ -53,11 +53,11 @@ Call function on window load and resize:
     </div>
 ```
 	
-🥽 This is the Resul on Mobile:
+📱 This is the Resul on Mobile:
 
 <img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png" width="150" alt="Mobile Top Bar Menu">
 
-🥽 This is Result on desktop
+🖥 This is Result on Desktop
 
 <img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/desktop.png" width="300" alt="Desktop Side Navigation Menu">
 
