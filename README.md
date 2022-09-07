@@ -55,11 +55,11 @@ Call function on window load and resize:
 	
 🥽 This is the Resul on Mobile:
 
-![Mobile Top Bar Menu](https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png | height=100)
+![Mobile Top Bar Menu](https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png | width=80)
 
 🥽 This is Result on desktop
 
-![Desktop Side Navigation Menu](https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/desktop.png | height=100)
+![Desktop Side Navigation Menu](https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/desktop.png | width=160)
 
 
 ### How it works: ⚙⚙⚙
