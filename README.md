@@ -56,6 +56,7 @@ Call function on window load and resize:
 🥽 This is the Resul on Mobile:
 
 ![Mobile Top Bar Menu](https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png | width=80)
+<img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png" width="100">
 
 🥽 This is Result on desktop
 
