@@ -29,16 +29,21 @@ const sidenavMenu = (gsap) => {
 
 		menuContentResponsive();
 		window.onresize = menuContentResponsive;
+		
 
 		if ('.mobilenav'){
+
 			let btnMobileMenu = document.querySelector('.icon-mobile-nav')
 			let btnMobileSearch = document.querySelector('.icon-mobile-search')
 			let iconMenu = document.querySelector('.icon-menu')
 			let iconSearch = document.querySelector('.icon-search')
 			let topBarNav = document.querySelector('.top-nav')
+
 			var topBarHeight = topBarNav.offsetHeight;
 			var iconClose = document.querySelectorAll('header [class^="icon-close"]')
+
 			gsap.to(iconClose, { alpha: 0, visibility: 'hidden'})
+
 			btnMobileMenu.addEventListener('click', (event) => {
 				let menuContent = document.querySelector('.menu-content')
 				var submenuTrigger = document.querySelector('.submenu-trigger')
@@ -53,10 +58,13 @@ const sidenavMenu = (gsap) => {
 					submenuTrigger.addEventListener('click', (event) => {
 						var submenuTriggerId = submenuTrigger.id
 						var submenuNav = document.getElementById(submenuTriggerId).nextElementSibling
+
 						var backToMain = document.querySelector('.back')
+						//console.log(menuContent)
+			
 						gsap.to(submenuNav, .6, { alpha: 1, visibility: 'visible', width: '100vw'} )
 						backToMain.addEventListener('click', (event) => {
-							gsap.to(submenuNav, 1, { alpha: 0, visibility: 'hidden', width: 0} )
+							gsap.to(submenuNav, .5, { alpha: 0, visibility: 'hidden', width: 0} )
 						});
 					});
 

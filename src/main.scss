@@ -100,7 +100,11 @@ header{
 	.submenu-nav{
 		background: $secondary;
 		position: absolute;
-		top: 0; right: 0; bottom: 0;left: 0;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100vw;
 		height: 100vh;
 		overflow-y: scroll;
 		padding: 0;
@@ -172,9 +176,10 @@ header{
 			justify-content: space-between;
 			align-items: center;
 		
-			.site-logo{ width: 150px; }
+			.site-logo{ width: 150px; padding: 1em;}
 			.icon-mobile-nav{ display: none; }
 		}
+		
 
 	}// header.sidenav
 

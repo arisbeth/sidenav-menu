@@ -8,7 +8,7 @@ If you’re working on craft CMS, this can used for develop a vertical menu with
 ### Usage:
 
 
-The HTML structure is composed by 2 main elements: a <header> element, containing the website logo, the search form, the navigation trigger (.menu-mobile - mobile version only) and the top navigation, and a <main> element containing the page main content (div.content-wrapper) and the sidebar navigation (nav.cd-side-nav).
+The HTML structure is composed by 3 main elements: a <header> element, containing the website logo, the search form, the navigation trigger (.menu-mobile - mobile version only) and the top navigation, and a <main> element containing the page main content (div.content-wrapper) and the sidebar navigation (nav.cd-side-nav).
 
 Import function:
 
@@ -31,14 +31,35 @@ Call function on window load and resize:
         sidenNavMenu();
     })
 
-**Example:**
+** Example:**
 
-
+```html
+    <div class="menu-content" role="none">
+        <ul class="primary-nav" role="menubar" aria-label="Main Navigation Content Items">
+            <li>
+                <button role="menuitem" id="Submenu" class="submenu-trigger">Submenu</button>
+                <ul id="itemsSubmenu" class="submenu-nav" role="menubar">
+                    <li class="back">
+                        <button>Back to Main Menu</button>
+                    </li>
+                    <li class="overview-item"><a href="">Submenu Main Link Item</a></li>
+                    <li><a href="">Sumenu Simple Link Item</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="" role="menuitem">Main Link Item</a>
+            </li>
+        </ul>
+    </div>
+```
 	
 🥽 This is the Resul on Mobile:
 
+![alt text](https://github.com/arisbeth/sidenav-menu/src/assets/mobile.png)
+
 🥽 This is Result on desktop
 
+![alt text](https://github.com/arisbeth/sidenav-menu/src/assets/desktop.png)
 
 
 ### How it works: ⚙⚙⚙
