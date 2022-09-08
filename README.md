@@ -8,7 +8,9 @@ If you’re working on craft CMS, this can used for develop a vertical menu with
 ### Usage:
 
 
-The HTML structure is composed by 3 main elements: a ``` <header> ```element, containing the website logo, the search form, the navigation trigger ```(.menu-mobile - mobile version only)``` and the top navigation, and a ``` <main> ```element containing the page main content ```(div.content-wrapper)``` and the sidebar navigation ```(nav.cd-side-nav)```.
+The HTML structure is composed by thismain elements: 
+
+``` <header> ```  is the main navigation content  ```.top-nav```  containing contains menu navigation and search triggers for mobile version only and the website logo for both versions. ``` <main> ``` element containing the page main content and top search input for desktop version. The ```<nav>```  or  ```.main-nav``` element, contains the main navigation items in  ```.menu-content``` and submenu content items for horizontal expand in desktop and on top of all the content for mobile version.
 
 Import function:
 
@@ -31,7 +33,22 @@ Call function on window load and resize:
         sidenNavMenu();
     })
 
-** Example:**
+** Example: **
+
+<table>
+  <tr>
+    <th>📱 This is the Resul on Mobile</th>
+    <th>🖥 This is Result on Desktop</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png" width="150" alt="Mobile Top Bar Menu"></td>
+    <td><img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/desktop.png" width="300" alt="Desktop Side Navigation Menu"></td>
+  </tr>
+</table>
+
+
+
+### How it works: ⚙⚙⚙
 
 ```html
     <div class="menu-content" role="none">
@@ -52,15 +69,3 @@ Call function on window load and resize:
         </ul>
     </div>
 ```
-	
-📱 This is the Resul on Mobile:
-
-<img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png" width="150" alt="Mobile Top Bar Menu">
-
-🖥 This is Result on Desktop
-
-<img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/desktop.png" width="300" alt="Desktop Side Navigation Menu">
-
-### How it works: ⚙⚙⚙
-
-# sidenav-menu
