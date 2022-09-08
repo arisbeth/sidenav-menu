@@ -43,8 +43,8 @@ You can change the variables without any problem but the general styles of the m
 ```scss
 // General
 html {
-	body    {...}
-	main    {...}
+	body    { }
+	main    { }
 }
 ```
 HTML Structure
@@ -55,33 +55,25 @@ HTML Structure
 ```html
 <header>
 
-	<div class="top-nav">
-		...
-	</div>
+<div class="top-nav">
+ ...
+</div>
 
-	<nav class="main-nav">
-		<div class="menu-content">
-			<ul class="primary-nav">
-				<li>
-					<button id="Submenu" class="submenu-trigger">Submenu</button>
-					<ul id="itemsSubmenu" class="submenu-nav">
-						<li class="back">
-							<button>Back to Main Menu</button>
-						</li>
-						<li class="overview-item">
-							<a href="">Submenu Main Link Item</a>
-						</li>
-						<li>
-							<a href="">Sumenu Simple Link Item</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="">Main Link Item</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+<nav class="main-nav">
+ <div class="menu-content">
+  <ul class="primary-nav">
+   <li>
+    <button id="Submenu" class="submenu-trigger">Submenu</button>
+    <ul	id="itemsSubmenu" class="submenu-nav">
+     <li class="back"><button>Back to Main Menu</button></li>
+     <li class="overview-item"><a href="#">Submenu Main Link Item</a></li>
+     <li><a href="#">Sumenu Simple Link Item</a></li>
+    </ul>
+   </li>
+   <li><a href="#">Main Link Item</a></li>
+  </ul>
+ </div>
+</nav>
 
 </header>
 ```
