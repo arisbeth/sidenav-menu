@@ -35,14 +35,14 @@ Call function on window load and resize:
 
 ** Example: **
 
-<table>
+<table align="center">
   <tr>
     <th>📱 This is the Resul on Mobile</th>
     <th>🖥 This is Result on Desktop</th>
   </tr>
   <tr>
-    <td><img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png" width="150" alt="Mobile Top Bar Menu"></td>
-    <td><img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/desktop.png" width="300" alt="Desktop Side Navigation Menu"></td>
+    <td><img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png" height="250" alt="Mobile Top Bar Menu"></td>
+    <td><img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/desktop.png" height="250" alt="Desktop Side Navigation Menu"></td>
   </tr>
 </table>
 
