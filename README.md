@@ -2,7 +2,7 @@
 
 Responsive Menu Navigation, for sites that keep the main side menu options always visible on desktop, vertical responsive submenu options, in this snnippet we transform the sidebar to a top navigation menu bar on mobile, with the search option at top bar menu mobile and outside the sidebar, in main content top.
 
-If you’re working on craft CMS, this can used for develop a vertical menu with channels or structurs for plenty of sub-categories. This snippet helps to build Sidebar navigation providing a starting with a simple template.
+If you’re working on craft CMS, this can used for develop a vertical menu with channels or structures for plenty of sub-categories. This snippet helps to build Sidebar navigation providing a starting with a simple template.
 
 
 ### Usage:
@@ -14,35 +14,89 @@ The HTML structure is composed by thismain elements:
 
 Import function:
 
-    import { sideNavMenu  } from  "sidenav-menu"; 
-	
-Call function on window load and resize:
+``` js/components/sidenav.js```
 
-    window.addEventListener('DOMContentLoaded', () => {
-        // Navigation function when fonts are loaded
-        if (typeof document.fonts == 'undefined') {
-            sideNavMenu();
-        } else {
-            document.fonts.ready.then(function () {
-                sidenNavMenu();
-            })
-        }
-    })
-    
-    window.addEventListener('resize', () => {
-        sidenNavMenu();
-    })
+```js
+import { sideNavMenu  } from  "sidenav-menu"; 
+```	
+Call function on window load and resize:
+```js
+window.addEventListener('DOMContentLoaded', () => {
+	// Navigation function when fonts are loaded
+	if (typeof document.fonts == 'undefined') {
+		sideNavMenu();
+	} else {
+		document.fonts.ready.then(function () {
+			sidenNavMenu();
+		})
+	}
+})
+
+window.addEventListener('resize', () => {
+	sidenNavMenu();
+})
+```
+Get Styles ```/main.scss```:
+
+You can change the variables without any problem but the general styles of the main elements are important to control the structure and its behavior when the breakpoint changes
+
+```scss
+// General
+html {
+	body    {...}
+	main    {...}
+}
+```
+HTML Structure
+
+
+
+
+```html
+<header>
+
+	<div class="top-nav">
+		...
+	</div>
+
+	<nav class="main-nav">
+		<div class="menu-content">
+			<ul class="primary-nav">
+				<li>
+					<button id="Submenu" class="submenu-trigger">Submenu</button>
+					<ul id="itemsSubmenu" class="submenu-nav">
+						<li class="back">
+							<button>Back to Main Menu</button>
+						</li>
+						<li class="overview-item">
+							<a href="">Submenu Main Link Item</a>
+						</li>
+						<li>
+							<a href="">Sumenu Simple Link Item</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">Main Link Item</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+</header>
+```
+
 
 ** Example: **
 
-<table align="center">
+<table>
   <tr>
-    <th>📱 This is the Resul on Mobile</th>
-    <th>🖥 This is Result on Desktop</th>
+	<th align="center">📱 This is the Resul on Mobile</th>
+	<th align="center">🖥 This is Result on Desktop</th>
   </tr>
   <tr>
-    <td><img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png" height="250" alt="Mobile Top Bar Menu"></td>
-    <td><img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/desktop.png" height="250" alt="Desktop Side Navigation Menu"></td>
+	<td align="center"><img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/mobile.png" height="250" alt="Mobile Top Bar Menu"></td>
+	<td align="center"><img src="https://github.com/arisbeth/sidenav-menu/blob/main/src/assets/desktop.png" height="250" alt="Desktop Side Navigation Menu"></td>
   </tr>
 </table>
 
@@ -50,22 +104,4 @@ Call function on window load and resize:
 
 ### How it works: ⚙⚙⚙
 
-```html
-    <div class="menu-content" role="none">
-        <ul class="primary-nav" role="menubar" aria-label="Main Navigation Content Items">
-            <li>
-                <button role="menuitem" id="Submenu" class="submenu-trigger">Submenu</button>
-                <ul id="itemsSubmenu" class="submenu-nav" role="menubar">
-                    <li class="back">
-                        <button>Back to Main Menu</button>
-                    </li>
-                    <li class="overview-item"><a href="">Submenu Main Link Item</a></li>
-                    <li><a href="">Sumenu Simple Link Item</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="" role="menuitem">Main Link Item</a>
-            </li>
-        </ul>
-    </div>
-```
+The ```nav.main-nav``` element has the key content. This element adapts according to the class that you add to ```<header>``` via js. Whether it's ```.sidenav``` or ```.mobilenav```, the content of the lists ```.primary-nav``` and ```.submenu-nav``` is styled according to the class of that parent. 
